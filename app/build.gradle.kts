@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.felipelucio.listadetarefas"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.felipelucio.listadetarefas"
