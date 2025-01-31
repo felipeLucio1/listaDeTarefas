@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ListaDeTarefas</string>
+    <string name="lista_de_tarefas">Lista de Tarefas</string>
 </resources>
