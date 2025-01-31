@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.outlined.Delete
+import androidx.compose.material.icons.outlined.Check
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardColors
 import androidx.compose.material3.HorizontalDivider
@@ -26,7 +26,7 @@ fun ItemDeTarefaComponente(modifier: Modifier, tarefa: String) {
     Card(
         modifier = modifier.fillMaxWidth()
             .padding(vertical = 4.dp)
-            .height(200.dp),
+            .wrapContentHeight(),
         colors = CardColors(
             containerColor = MaterialTheme.colorScheme.surfaceContainer,
             contentColor = MaterialTheme.colorScheme.onSurface,
@@ -49,11 +49,10 @@ fun ItemDeTarefaComponente(modifier: Modifier, tarefa: String) {
                     IconButton(
                         {},
                         Modifier.weight(1f)
-                            .wrapContentSize()
-                            .padding(end = 4.dp),
+                            .wrapContentSize(),
                         colors = IconButtonDefaults.iconButtonColors(MaterialTheme.colorScheme.surfaceContainer)
                     ) {
-                        Icon(Icons.Outlined.Delete, "Excluir tarefa")
+                        Icon(Icons.Outlined.Check, "Excluir tarefa")
                     }
                 }
             }
