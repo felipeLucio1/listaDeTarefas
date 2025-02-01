@@ -17,6 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.felipelucio.listadetarefas.R
+import com.felipelucio.listadetarefas.view.componentes.NovaTarefaBotaoCOmponente
 import com.felipelucio.listadetarefas.view.componentes.TelaPrincipalComponente
 import com.felipelucio.listadetarefas.view.ui.theme.TemaDoApp
 
@@ -43,7 +44,8 @@ class MainActivity : ComponentActivity() {
                                 Text(stringResource(R.string.lista_de_tarefas))
                             }
                         )
-                    }
+                    },
+                    floatingActionButton = { NovaTarefaBotaoCOmponente {} }
                 ) { innerPadding ->
                     TelaPrincipalComponente(
                         modifier = Modifier.padding(innerPadding)
