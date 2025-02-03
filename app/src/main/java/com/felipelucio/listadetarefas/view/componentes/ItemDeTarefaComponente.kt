@@ -10,6 +10,8 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Check
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardColors
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.CardElevation
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -33,7 +35,8 @@ fun ItemDeTarefaComponente(modifier: Modifier, tarefa: TarefaModel) {
             contentColor = MaterialTheme.colorScheme.onSurface,
             disabledContentColor = MaterialTheme.colorScheme.onSurface,
             disabledContainerColor = MaterialTheme.colorScheme.surfaceContainerLowest,
-        )
+        ),
+        elevation = CardDefaults.cardElevation(2.dp)
     ) {
         Column(
             modifier = Modifier.padding(all = 8.dp)
@@ -74,7 +77,7 @@ fun ItemDeTarefaComponente(modifier: Modifier, tarefa: TarefaModel) {
                 modifier = Modifier,
                 text = tarefa.descricao,
                 maxLines = 3,
-                fontWeight = FontWeight.W100,
+                fontWeight = FontWeight.W400,
                 color = MaterialTheme.colorScheme.onSurface
             )
         }
