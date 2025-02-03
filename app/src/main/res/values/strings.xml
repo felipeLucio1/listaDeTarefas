@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ListaDeTarefas</string>
+    <string name="lista_de_tarefas">Lista de Tarefas</string>
+    <string name="nova_tarefa">Nova Tarefa</string>
+    <string name="voltar">Voltar</string>
+    <string name="titulo">Título (Opcional)</string>
+    <string name="descricao_tarefa">Descrição da Tarefa</string>
+    <string name="salvar">Salvar</string>
 </resources>
