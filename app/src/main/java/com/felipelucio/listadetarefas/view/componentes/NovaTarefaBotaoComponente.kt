@@ -5,12 +5,12 @@ import androidx.compose.material.icons.outlined.Add
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 
 @Composable
-fun NovaTarefaBotaoCOmponente(onCLick: () -> Unit) {
+fun NovaTarefaBotaoComponente(onCLick: () -> Unit) {
     FloatingActionButton(
-        onClick = onCLick,
+        onClick = {
+            onCLick()},
     ) {
         Icon(Icons.Outlined.Add, "Criar nonva tarefa")
     }
