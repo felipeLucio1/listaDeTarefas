@@ -6,4 +6,5 @@
     <string name="titulo">Título (Opcional)</string>
     <string name="descricao_tarefa">Descrição da Tarefa</string>
     <string name="salvar">Salvar</string>
+    <string name="tarefa_database">tarefa_database</string>
 </resources>
