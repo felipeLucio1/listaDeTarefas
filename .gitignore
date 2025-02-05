@@ -76,3 +76,4 @@ lint/tmp/
 app/release/output.json
 .idea/codeStyles/
 .idea/misc.xml
+.idea/gradle.xml
