@@ -20,6 +20,9 @@ fun NavigationController(
         modifier = modifier,
     ) {
         composable<TelaPrincipal> {
+            TelaPrincipal
+        }
+        composable<TelaPrincipal> {
             TelaPrincipalComponente(
                 modifier = modifier,
                 onNovaTarefaClick = {
